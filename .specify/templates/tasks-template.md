@@ -8,7 +8,7 @@ description: "Task list template for feature implementation"
 **Input**: Design documents from `/specs/[###-feature-name]/`
 **Prerequisites**: plan.md (required), spec.md (required for user stories), research.md, data-model.md, contracts/
 
-**Tests**: The examples below include test tasks. Tests are OPTIONAL - only include them if explicitly requested in the feature specification.
+**Tests**: The examples below include test tasks. Tests are MANDATORY for all core functionality per constitution requirements - all core task operations must have unit tests with minimum 80% coverage of business logic.
 
 **Organization**: Tasks are grouped by user story to enable independent implementation and testing of each story.
 
@@ -49,7 +49,7 @@ description: "Task list template for feature implementation"
 **Purpose**: Project initialization and basic structure
 
 - [ ] T001 Create project structure per implementation plan
-- [ ] T002 Initialize [language] project with [framework] dependencies
+- [ ] T002 Initialize Python 3.13+ project with UV package manager (no external dependencies beyond standard library)
 - [ ] T003 [P] Configure linting and formatting tools
 
 ---
@@ -62,12 +62,12 @@ description: "Task list template for feature implementation"
 
 Examples of foundational tasks (adjust based on your project):
 
-- [ ] T004 Setup database schema and migrations framework
-- [ ] T005 [P] Implement authentication/authorization framework
-- [ ] T006 [P] Setup API routing and middleware structure
-- [ ] T007 Create base models/entities that all stories depend on
-- [ ] T008 Configure error handling and logging infrastructure
-- [ ] T009 Setup environment configuration management
+- [ ] T004 Setup in-memory data storage (list of dictionaries or dataclasses)
+- [ ] T005 [P] Implement core task management functions (add, delete, update, mark complete, list)
+- [ ] T006 [P] Setup CLI interface structure with menu-driven navigation
+- [ ] T007 Create base task model/entity that all operations depend on
+- [ ] T008 Configure error handling and user-friendly messaging infrastructure
+- [ ] T009 Setup input validation and graceful error handling
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 

@@ -31,7 +31,13 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+The following constitution principles must be validated:
+- Simplicity First: Verify implementation approach aligns with MVP requirements
+- Spec-Driven Development: Confirm all code derives from specifications
+- Clean Code: Ensure adherence to PEP 8, type hints, and documentation standards
+- Performance Efficiency: Validate data structures and algorithms for sub-second response times
+- Error Handling and User Experience: Plan for graceful error handling and user-friendly CLI
+- Test-Driven Development: Design tests for all core functionality with 80%+ coverage
 
 ## Project Structure
 
